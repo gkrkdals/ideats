@@ -1,5 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import React from "react";
+
 
 export default function RootLayout({
   children,
@@ -8,9 +7,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <title>아이디어츠</title>
-      </head>
       <body>
         {children}
       </body>
