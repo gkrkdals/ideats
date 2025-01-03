@@ -5,45 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6195cd88-f9e0-4426-b70c-fa9504e5c076" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/public/image/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/title.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/admin/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/admin/login/LoginForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/admin/login/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/admin/login/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/admin/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/main/components/atom/Contact.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/main/components/atom/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/main/components/atom/PageImage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/main/components/molecule/ImageContainer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/main/components/organism/ImageSequence.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/main/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/main/modals/ContactModal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/main/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/atom/FormControl.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/modal/Modal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/modal/style.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/api/client/email.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/api/hello.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/axios.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/file.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/globe.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/next.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vercel.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/window.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +83,7 @@
       <workItem from="1735658128363" duration="8076000" />
       <workItem from="1735666696539" duration="39000" />
       <workItem from="1735666745762" duration="385000" />
-      <workItem from="1735861840496" duration="18097000" />
+      <workItem from="1735861840496" duration="19273000" />
     </task>
     <servers />
   </component>
