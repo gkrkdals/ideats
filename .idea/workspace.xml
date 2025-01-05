@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6195cd88-f9e0-4426-b70c-fa9504e5c076" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/image/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/image/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/image/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/image/4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/4.txt" beforeDir="false" />
-    </list>
+    <list default="true" id="6195cd88-f9e0-4426-b70c-fa9504e5c076" name="변경" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +86,7 @@
       <workItem from="1735666745762" duration="385000" />
       <workItem from="1735861840496" duration="24548000" />
       <workItem from="1735936094000" duration="22781000" />
-      <workItem from="1736006660470" duration="34951000" />
+      <workItem from="1736006660470" duration="35811000" />
     </task>
     <servers />
   </component>

@@ -15,6 +15,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const ext = (filename as string).split(".").at(-1);
     const contentType = `image/${ext === "jpg" ? "jpeg" : ext}`;
     res.setHeader("Content-Type", contentType);
+    res.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
     res.send(data);
   })
 }
