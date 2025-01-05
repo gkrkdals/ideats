@@ -51,7 +51,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const form = new Formidable();
     const rearrangedDir = path.join(process.cwd(), 'rearranged');
     const tmpDir = path.join(process.cwd(), "tmp");
-    const staticImageFolder = path.join(process.cwd(), "public", "image");
+    const staticImageFolder = path.join(process.cwd(), "assets", "image");
 
     if (!fs.existsSync(rearrangedDir)) {
       fs.mkdirSync(rearrangedDir, { recursive: true });

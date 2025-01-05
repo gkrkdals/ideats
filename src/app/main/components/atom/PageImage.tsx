@@ -7,7 +7,7 @@ interface PageImage {
 
 export default function PageImage(props: PageImage) {
   return (
-    <Image
+    <img
       src={props.src}
       alt={props.alt}
       width={1000}

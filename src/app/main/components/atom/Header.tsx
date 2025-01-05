@@ -8,7 +8,7 @@ export default function Header() {
     >
       <Image
         className="titleImage"
-        src={"/image/title.jpg"}
+        src={"/api/client/title.jpg"}
         alt={"header"}
         fill
         quality={100}

@@ -10,6 +10,7 @@ module.exports = {
         'tmp',
         'rearranged',
         'public',
+        'assets'
       ]
     },
   ]

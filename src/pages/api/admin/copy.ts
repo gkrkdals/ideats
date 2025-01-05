@@ -37,7 +37,7 @@ async function copyFiles(sourceDir: string, targetDir: string, condition: (filen
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === "POST") {
-    const sourceDir = path.join(process.cwd(), "public/image");
+    const sourceDir = path.join(process.cwd(), "assets/image");
     const targetDir = path.join(process.cwd(), "tmp");
     const condition = (file: string) => !isNaN(parseInt(file.split('.').at(0) ?? ''));
 
