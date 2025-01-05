@@ -111,15 +111,17 @@ export default function VideoSequence() {
   useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
 
-    if(window.innerWidth < 520) {
-      setVideoWidth(160);
-      setVideoHeight(90);
-    } else if (window.innerWidth >= 520 && window.innerWidth < 700) {
-      setVideoWidth(240);
-      setVideoHeight(135);
-    } else {
-      setVideoWidth(320);
-      setVideoHeight(180);
+    if (typeof window !== "undefined") {
+      if(window.innerWidth < 520) {
+        setVideoWidth(160);
+        setVideoHeight(90);
+      } else if (window.innerWidth >= 520 && window.innerWidth < 700) {
+        setVideoWidth(240);
+        setVideoHeight(135);
+      } else {
+        setVideoWidth(320);
+        setVideoHeight(180);
+      }
     }
 
     return () => {

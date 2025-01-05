@@ -1,11 +1,13 @@
 'use client';
 
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import ContactModal from "@/app/main/modals/ContactModal";
 
 export default function Contact() {
   const [open, setOpen] = useState(false);
   const [showSnackbar, setShowSnackbar] = useState(false);
+  const [buttonMargin, setButtonMargin] = useState(30);
+  const [fontSize, setFontSize] = useState<number | undefined>(undefined);
 
   const showSuccessMessage = () => {
     setShowSnackbar(true);
@@ -19,13 +21,20 @@ export default function Contact() {
     showSuccessMessage();
   }
 
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.innerWidth < 520) {
+      setButtonMargin(10);
+      setFontSize(10);
+    }
+  }, [])
+
   return (
     <>
       <button
         style={{
-          right: window.innerWidth < 520 ? 10 : 30,
+          right: buttonMargin,
           position: "absolute",
-          fontSize: window.innerWidth < 520 ? 10 : undefined
+          fontSize: fontSize,
         }}
         className='btn btn-dark btn-sm fw-bold'
         onClick={() => setOpen(true)}

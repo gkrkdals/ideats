@@ -5,52 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6195cd88-f9e0-4426-b70c-fa9504e5c076" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/public/backup/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backup/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backup/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backup/5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backup/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/backup/title.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icon/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/admin/components/atom/Container.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/admin/components/atom/LoginChecker.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/admin/components/atom/Logout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/admin/components/molecule/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/admin/components/molecule/ImageInfo.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/admin/components/organism/ImageOrder.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/global.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/main/components/molecule/ShowVideo.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/main/components/molecule/VideoDescription.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/main/components/molecule/VideoSequence.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/main/components/organism/Bottom.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/main/components/video.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/api/admin/copy.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/api/admin/image.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/api/auth/login.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/api/auth/logout.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/api/auth/verify.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/image/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/admin/layout.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/admin/login/LoginForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/admin/login/LoginForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/admin/login/layout.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/admin/login/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/admin/login/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/admin/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/admin/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/main/components/atom/Contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/components/atom/Contact.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/main/components/atom/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/components/atom/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/main/components/organism/ImageSequence.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/components/organism/ImageSequence.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/main/layout.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/main/modals/ContactModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/modals/ContactModal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/main/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/FormControl.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/FormControl.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/modal/style.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modal/style.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/api/client/email.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/api/client/email.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/components/molecule/VideoDescription.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/components/molecule/VideoDescription.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/components/molecule/VideoSequence.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/components/molecule/VideoSequence.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +89,7 @@
       <workItem from="1735666745762" duration="385000" />
       <workItem from="1735861840496" duration="24548000" />
       <workItem from="1735936094000" duration="22781000" />
-      <workItem from="1736006660470" duration="25830000" />
+      <workItem from="1736006660470" duration="26875000" />
     </task>
     <servers />
   </component>

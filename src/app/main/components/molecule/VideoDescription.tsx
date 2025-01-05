@@ -3,6 +3,7 @@
 import {Video} from "@/app/main/components/molecule/VideoSequence";
 import Image from "next/image";
 import styles from '../video.module.css';
+import {useEffect, useState} from "react";
 
 interface VideoDescriptionProps {
   video: Video;
@@ -12,6 +13,14 @@ interface VideoDescriptionProps {
 }
 
 export default function VideoDescription({ video, setSelectedVideoAction, height, width }: VideoDescriptionProps) {
+  const [fontSize, setFontSize] = useState(18);
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.innerWidth < 520) {
+      setFontSize(12);
+    }
+  }, []);
+
   return (
     <div className='mb-2'>
       <div
@@ -43,7 +52,7 @@ export default function VideoDescription({ video, setSelectedVideoAction, height
           marginLeft: 20,
           marginRight: 20,
           color: "white",
-          fontSize: window.innerWidth < 520 ? 12 : 18,
+          fontSize,
           cursor: 'pointer'
         }}
         className={styles.bottomText}
