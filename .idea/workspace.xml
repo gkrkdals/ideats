@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6195cd88-f9e0-4426-b70c-fa9504e5c076" name="변경" comment="" />
+    <list default="true" id="6195cd88-f9e0-4426-b70c-fa9504e5c076" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/icon/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image/4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image/title.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecosystem.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/ecosystem.config.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,7 +37,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/hagan/works/kmong/20250101_ideats/front/public/backup",
+    "last_opened_file_path": "C:/Users/hagan/works/kmong/20250101_ideats/front/assets",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -40,11 +50,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hagan\works\kmong\20250101_ideats\front\assets" />
       <recent name="C:\Users\hagan\works\kmong\20250101_ideats\front\public\backup" />
       <recent name="C:\Users\hagan\works\kmong\20250101_ideats\front\public\image" />
       <recent name="C:\Users\hagan\works\kmong\20250101_ideats\front\src\app\admin" />
       <recent name="C:\Users\hagan\works\kmong\20250101_ideats\front\src\pages\main" />
-      <recent name="C:\Users\hagan\works\kmong\20250101 사우스포\front\src\pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\hagan\works\kmong\20250101_ideats\front\public\image" />
@@ -86,7 +96,7 @@
       <workItem from="1735666745762" duration="385000" />
       <workItem from="1735861840496" duration="24548000" />
       <workItem from="1735936094000" duration="22781000" />
-      <workItem from="1736006660470" duration="28346000" />
+      <workItem from="1736006660470" duration="30814000" />
     </task>
     <servers />
   </component>
