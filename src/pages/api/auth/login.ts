@@ -6,11 +6,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   if (req.method === "POST") {
     const {username, password} = req.body;
 
-    const u = process.env.ID;
-    const p = process.env.PWD;
-
-    console.log(`username: ${username}, password: ${password}`);
-    console.log(`${u}, ${p}`);
+    const u = process.env.ADMIN_ID;
+    const p = process.env.ADMIN_PASSWORD;
 
     try {
       if (u === username && p === password) {
