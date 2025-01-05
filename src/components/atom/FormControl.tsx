@@ -10,9 +10,8 @@ export default function FormControl(props: FormControlProps) {
   return (
     <input
       {...props}
-      type="text"
-      className="form-control form-control-sm"
-      style={{ fontSize: '9pt' }}
+      className={`form-control form-control-sm ${props.className}`}
+      style={{ ...props.style, fontSize: '9pt' }}
     />
   )
 }

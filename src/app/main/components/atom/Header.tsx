@@ -4,16 +4,13 @@ import Contact from "@/app/main/components/atom/Contact";
 export default function Header() {
   return (
     <div
-      className="d-flex justify-content-center align-items-center position-sticky sticky-top"
-      style={{
-        height: 'calc(100vw * 0.05)',
-      }}
+      className="d-flex justify-content-center align-items-center position-sticky sticky-top titleHeader"
     >
       <Image
-        style={{ position: 'absolute',  }}
+        className="titleImage"
         src={"/image/title.jpg"}
         alt={"header"}
-        fill={true}
+        fill
         quality={100}
       />
       <Contact />

@@ -23,8 +23,9 @@ export default function Contact() {
     <>
       <button
         style={{
-          right: 30,
+          right: window.innerWidth < 520 ? 10 : 30,
           position: "absolute",
+          fontSize: window.innerWidth < 520 ? 10 : undefined
         }}
         className='btn btn-dark btn-sm fw-bold'
         onClick={() => setOpen(true)}
@@ -33,7 +34,7 @@ export default function Contact() {
       </button>
       <ContactModal onSuccess={handleSuccess} open={open} setOpen={setOpen} />
       {showSnackbar && (
-        <div className="rounded" style={{ width: 300 }}>
+        <div className={`snackbar ${showSnackbar ? 'show' : ''}`}>
           성공적으로 메일을 보냈습니다.
         </div>
       )}

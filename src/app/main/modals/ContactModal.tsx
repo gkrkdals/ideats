@@ -33,9 +33,8 @@ export default function ContactModal(props: ContactModalProps) {
   const set = (key: keyof EmailDto, value: string) => setEmailData({ ...emailData, [key]: value });
 
   async function sendEmail() {
-    await axios.post("/api/client/email", emailData);
-
     props.onSuccess();
+    await axios.post("/api/client/email", emailData);
   }
 
   useEffect(() => {

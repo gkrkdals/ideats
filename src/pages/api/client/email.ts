@@ -46,8 +46,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     const mailOptions = {
       from: process.env.EMAIL,
-      // to: 'ideats@naver.com',
-      to: 'hagangmin@gmail.com',
+      to: 'ideats@naver.com',
+      // to: 'hagangmin@gmail.com',
       subject: `${name} - ${email}`,
       text: `프로젝트명: ${projectName}\n\n프로젝트 내용: ${projectContents}\n\n참고영상: ${ref}\n\n담당자 성함: ${name}\n\n이메일: ${email}\n\n전화번호: ${tel}`,
     }
@@ -56,7 +56,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       await transporter.sendMail(mailOptions);
       res.status(200).send("");
     } catch(e) {
-      console.log("an error occurred", e);
+      console.error("an error occurred", e);
       res.status(500).send(e);
     }
   }
