@@ -2,7 +2,7 @@
 
 import {Video} from "@/app/main/components/molecule/VideoSequence";
 import ReactPlayer from "react-player/vimeo";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 interface ShowVideoProps {
   selectedVideo: Video | null;
@@ -13,6 +13,9 @@ interface ShowVideoProps {
 export default function ShowVideo({ selectedVideo, setSelectedVideoAction, videos }: ShowVideoProps) {
 
   const [videoReady, setVideoReady] = useState(false);
+
+  const [width, setWidth] = useState('600px');
+  const [height, setHeight] = useState('335px');
 
   function getUrl(uri: string) {
     const id = uri.split("/").at(-1);
@@ -29,6 +32,13 @@ export default function ShowVideo({ selectedVideo, setSelectedVideoAction, video
     console.log("woohooo");
     setVideoReady(true);
   }
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.innerWidth < 600) {
+      setWidth("300px");
+      setHeight("168px");
+    }
+  }, []);
 
   return (
     selectedVideo && (
@@ -48,8 +58,8 @@ export default function ShowVideo({ selectedVideo, setSelectedVideoAction, video
             <ReactPlayer
               url={getUrl(selectedVideo.uri)}
               controls
-              width="600px"
-              height="335px"
+              width={width}
+              height={height}
               onReady={onReady}
             />
           </div>
