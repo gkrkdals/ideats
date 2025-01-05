@@ -2,7 +2,7 @@
 
 import {Video} from "@/app/main/components/molecule/VideoSequence";
 import Image from "next/image";
-import styles from '../video.module.css';
+import styles from '../video-sequence.module.css';
 import {useEffect, useState} from "react";
 
 interface VideoDescriptionProps {
@@ -12,7 +12,7 @@ interface VideoDescriptionProps {
   height: number;
 }
 
-export default function VideoDescription({ video, setSelectedVideoAction, height, width }: VideoDescriptionProps) {
+export default function VideoDescription({ video, height, width }: VideoDescriptionProps) {
   const [fontSize, setFontSize] = useState(18);
 
   useEffect(() => {
@@ -21,11 +21,27 @@ export default function VideoDescription({ video, setSelectedVideoAction, height
     }
   }, []);
 
+  async function handleShare() {
+    if (typeof navigator !== "undefined" && navigator.share !== undefined) {
+      try {
+        await navigator.share({
+          title: video.name,
+          text: video.name,
+          url: `https://vimeo.com/${video.uri.split("/").at(-1)}`
+        })
+      } catch (e) {
+        console.error("공유 실패");
+      }
+    } else {
+      alert('공유 기능을 지원하지 않는 브라우저입니다.')
+    }
+  }
+
   return (
     <div className='mb-2'>
       <div
         className='imageContainer'
-        onClick={() => setSelectedVideoAction(video)}
+        onClick={handleShare}
       >
         <Image
           src={video.picture}
@@ -56,7 +72,7 @@ export default function VideoDescription({ video, setSelectedVideoAction, height
           cursor: 'pointer'
         }}
         className={styles.bottomText}
-        onClick={() => setSelectedVideoAction(video)}
+        onClick={handleShare}
       >
         {video.name}
       </h3>

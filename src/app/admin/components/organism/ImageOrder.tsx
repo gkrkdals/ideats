@@ -115,7 +115,7 @@ export default function ImageOrder() {
               style={{
                 width: 300
               }}
-              accept="image/jpeg"
+              accept="image/png"
             />
           </div>
           <hr/>

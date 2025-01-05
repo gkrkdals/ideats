@@ -7,11 +7,12 @@ interface PageImage {
 
 export default function PageImage(props: PageImage) {
   return (
-    <img
+    <Image
       src={props.src}
       alt={props.alt}
-      width={1000}
-      height={1000}
+      width={800}
+      height={800}
+      quality={100}
       style={{ display: 'block', width: '100%', height: 'auto' }}
     />
   );

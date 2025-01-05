@@ -5,8 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6195cd88-f9e0-4426-b70c-fa9504e5c076" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/image/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image/title.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/components/molecule/VideoInSlider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/components/molecule/VideoSlider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/components/video-slide.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/main.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useBackgroundColor.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useIsMobile.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/image/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/image/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/image/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/image/4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/image/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/image/title.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/admin/components/organism/ImageOrder.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/admin/components/organism/ImageOrder.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/components/atom/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/components/atom/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/components/atom/PageImage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/components/atom/PageImage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/components/molecule/ImageContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/components/molecule/ImageContainer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/main/components/molecule/ShowVideo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/components/molecule/ShowVideo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/components/molecule/VideoDescription.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/components/molecule/VideoDescription.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/components/molecule/VideoSequence.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/components/molecule/VideoSequence.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/components/organism/Bottom.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/components/organism/Bottom.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/components/organism/ImageSequence.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/components/organism/ImageSequence.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/components/video.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/components/video-sequence.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/modals/ContactModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/modals/ContactModal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modal/style.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modal/style.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/5.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +128,8 @@
       <workItem from="1735861840496" duration="24548000" />
       <workItem from="1735936094000" duration="22781000" />
       <workItem from="1736006660470" duration="36415000" />
-      <workItem from="1736053873113" duration="228000" />
+      <workItem from="1736053873113" duration="1327000" />
+      <workItem from="1736060386995" duration="19942000" />
     </task>
     <servers />
   </component>

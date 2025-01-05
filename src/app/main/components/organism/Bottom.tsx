@@ -1,8 +1,8 @@
 export default function Bottom() {
   return (
-    <div style={{ backgroundColor: '#BF504F' }}>
-      <div style={{ color: 'white', paddingTop: 100, paddingBottom: 50 }}
-        className='d-flex justify-content-center'
+    <div className='backColor'>
+      <div style={{ color: 'white', paddingTop: 30, paddingBottom: 50 }}
+        className='d-flex justify-content-center footerText'
       >
         Copyright Southpaw Contents Company. All Rights Reserved Since 2018
       </div>

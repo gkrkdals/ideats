@@ -4,11 +4,14 @@ import ImageContainer from "@/app/main/components/molecule/ImageContainer";
 import VideoSequence from "@/app/main/components/molecule/VideoSequence";
 import {useEffect, useState} from "react";
 import {client} from "@/util/axios";
+import useIsMobile from "@/hooks/useIsMobile";
+import VideoSlider from "@/app/main/components/molecule/VideoSlider";
 
 interface IImage { src: string; alt: string }
 
 export default function ImageSequence() {
   const [images, setImages] = useState<IImage[]>([]);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     client
@@ -23,7 +26,7 @@ export default function ImageSequence() {
 
   return images.map((image, i) => {
     if (image.src.split(".").at(-1) === "txt") {
-      return <VideoSequence key={i} />;
+      return isMobile ? <VideoSlider key={i} /> : <VideoSequence key={i} />;
     } else {
       return <ImageContainer key={i} src={image.src} alt={image.alt} />
     }

@@ -2,6 +2,7 @@ import Modal, {ModalActions, ModalContent, ModalProps, ModalTitle} from "@/compo
 import FormControl, {FormControlTextArea, FormLabel} from "@/components/atom/FormControl";
 import {ReactNode, useEffect, useRef, useState} from "react";
 import axios from "axios";
+import useIsMobile from "@/hooks/useIsMobile";
 
 interface ContactModalProps extends ModalProps {
   onSuccess: () => void;

@@ -19,7 +19,6 @@ export default function ShowVideo({ selectedVideo, setSelectedVideoAction, video
 
   function getUrl(uri: string) {
     const id = uri.split("/").at(-1);
-    console.log(`https://vimeo.com/${id}`);
     return `https://vimeo.com/${id}`;
   }
 

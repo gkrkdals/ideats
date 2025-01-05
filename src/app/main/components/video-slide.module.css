@@ -1,0 +1,70 @@
+.imageContainer {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.sliderWrapper {
+    position: relative;
+}
+
+.sliderContainer {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* 폰 화면 세로 높이 */
+    overflow: hidden;
+    background-color: black; /* 배경을 검게 설정 */
+}
+
+.sliderImage {
+    object-fit: cover; /* 비율을 유지하면서 가로로 늘리기 */
+    width: 100%;
+    height: 100%;
+}
+
+.customDots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-width: 100%; /* 최대 너비 설정 */
+    margin-top: 10px;
+}
+
+.customDot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* 스무스하게 넘어가도록 설정 */
+}
+
+.customDot.active {
+    background-color: black;
+}

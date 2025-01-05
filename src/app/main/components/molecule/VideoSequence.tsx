@@ -1,9 +1,10 @@
 'use client';
 
-import style from '../video.module.css';
+import style from '../video-sequence.module.css';
 import React, {useEffect, useRef, useState} from "react";
 import VideoDescription from "@/app/main/components/molecule/VideoDescription";
 import ShowVideo from "@/app/main/components/molecule/ShowVideo";
+import useBackgroundColor from "@/hooks/useBackgroundColor";
 
 const axios = require("axios").create();
 
@@ -30,6 +31,8 @@ export default function VideoSequence() {
 
   const [videoWidth, setVideoWidth] = useState(320);
   const [videoHeight, setVideoHeight] = useState(180);
+
+  const backgroundColor = useBackgroundColor()
 
   async function getVideo(page: number, category: string) {
     setLoading(true);
@@ -134,7 +137,7 @@ export default function VideoSequence() {
   }, [selectedVideo]);
 
   return (
-    <div className='pb-5 pt-4' style={{backgroundColor: '#BF504F', minHeight: 400 }}>
+    <div className='pt-4' style={{backgroundColor, minHeight: 400}}>
       <div className="d-flex justify-content-end">
         <div
           hidden
@@ -167,8 +170,8 @@ export default function VideoSequence() {
               ) : (
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                      className="bi bi-chevron-down" viewBox="0 0 16 16">
-                    <path fillRule="evenodd"
-                          d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                  <path fillRule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
                 </svg>
               )
             }
@@ -246,7 +249,10 @@ export default function VideoSequence() {
         </div>
       </div>
 
-      <ShowVideo selectedVideo={selectedVideo} setSelectedVideoAction={setSelectedVideo} videos={video} />
+      <ShowVideo selectedVideo={selectedVideo} setSelectedVideoAction={setSelectedVideo} videos={video}/>
+      <div className='upperFooter'>
+
+      </div>
     </div>
   )
 }
