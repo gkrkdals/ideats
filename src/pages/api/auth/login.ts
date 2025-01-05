@@ -9,6 +9,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const u = process.env.ID;
     const p = process.env.PWD;
 
+    console.log(`username: ${username}, password: ${password}`);
+    console.log(`${u}, ${p}`);
+
     try {
       if (u === username && p === password) {
         const accessToken = jwt.sign({ username }, process.env.JWT_SECRET as string, {
