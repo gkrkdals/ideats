@@ -37,7 +37,6 @@ export default function VideoSlider() {
   return (
     <div className='backColor pt-2'>
       <Slider
-        dots={true}
         infinite={false}
         speed={500}
         slidesToShow={1}

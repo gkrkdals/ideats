@@ -5,7 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6195cd88-f9e0-4426-b70c-fa9504e5c076" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/config.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/image/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/image/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/image/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/image/4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/image/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/image/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/image/title.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/components/molecule/VideoSlider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/components/molecule/VideoSlider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/6.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +106,8 @@
       <workItem from="1735936094000" duration="22781000" />
       <workItem from="1736006660470" duration="36415000" />
       <workItem from="1736053873113" duration="1327000" />
-      <workItem from="1736060386995" duration="30349000" />
+      <workItem from="1736060386995" duration="31175000" />
+      <workItem from="1736143747120" duration="119000" />
     </task>
     <servers />
   </component>
