@@ -9,6 +9,17 @@ const nextConfig: NextConfig = {
         source: "/",
         destination: "/main",
         permanent: false
+      },
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'www.ideats.net',
+          }
+        ],
+        destination: 'https://ideats.net/:path*',
+        permanent: true,
       }
     ]
   },
