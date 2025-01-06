@@ -9,6 +9,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       sameSite: "none",
       expires: new Date(0),
       path: '/',
-    }))
+    }));
   }
 }

@@ -46,7 +46,7 @@ export default function ContactModal(props: ContactModalProps) {
         '장르: TVCF/웹드라마/홍보, 프로모션/바이럴/촬영문의/편집문의\n\n내용: 제작하고자 하는 영상의 내용을 기재해 주세요'
       );
     }
-  });
+  }, []);
 
   return (
     <Modal open={props.open} setOpen={props.setOpen} width={isMobile ? '90vw' : 600}>

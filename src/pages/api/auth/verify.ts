@@ -9,7 +9,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       verify(token as string, process.env.JWT_SECRET as string);
       res.status(200).send("hello");
     } catch (e) {
-      res.status(500).send({error: e});
+      res.status(401).send({error: e});
     }
 
   }

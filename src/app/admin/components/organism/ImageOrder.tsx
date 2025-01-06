@@ -15,6 +15,9 @@ export default function ImageOrder() {
   const [loading, setLoading] = useState(false);
   const [saving, setSaving] = useState(false);
 
+  const [mail, setMail] = useState("");
+  const [vimeo, setVimeo] = useState("");
+
   async function handleLoad() {
     setLoading(true);
 
@@ -63,6 +66,8 @@ export default function ImageOrder() {
           'Content-Type': 'multipart/form-data',
         }
       });
+
+      await client.put('/api/admin/config', { mail, vimeo });
     } catch (e) {
       console.error(e);
     } finally {
@@ -91,6 +96,13 @@ export default function ImageOrder() {
       .finally(() => {
         setLoading(false);
       });
+
+    client
+      .get('/api/admin/config')
+      .then((res) => {
+        setMail(res.data.mail);
+        setVimeo(res.data.vimeo);
+      })
   }, []);
 
   return (
@@ -128,6 +140,26 @@ export default function ImageOrder() {
               setChangedFilesAction={setChangedFiles}
             />
           ))}
+          <hr/>
+          <div>
+            메일 주소
+            <FormControl
+              type="email"
+              className='mb-3'
+              value={mail}
+              onChange={(e) => setMail(e.target.value)}
+            />
+            Vimeo 계정 링크
+            <FormControl
+              type="url"
+              className='mb-1'
+              value={vimeo}
+              onChange={(e) => setVimeo(e.target.value)}
+            />
+            <p className='text-secondary'>
+              Vimeo 계정의 링크 형식은 https://vimeo.com/[user######## 또는 유저ID] 입니다.
+            </p>
+          </div>
           <div className='d-flex justify-content-end mt-4 px-3' style={{ marginBottom: 50 }}>
             <button
               className='btn btn-outline-success'

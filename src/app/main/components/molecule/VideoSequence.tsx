@@ -5,6 +5,7 @@ import React, {useEffect, useRef, useState} from "react";
 import VideoDescription from "@/app/main/components/molecule/VideoDescription";
 import ShowVideo from "@/app/main/components/molecule/ShowVideo";
 import useBackgroundColor from "@/hooks/useBackgroundColor";
+import {client} from "@/util/axios";
 
 const axios = require("axios").create();
 
@@ -32,10 +33,14 @@ export default function VideoSequence() {
   const [videoWidth, setVideoWidth] = useState(320);
   const [videoHeight, setVideoHeight] = useState(180);
 
+  const vimeoUserRef = useRef<string>('');
+
   const backgroundColor = useBackgroundColor()
 
-  async function getVideo(page: number, category: string) {
+  async function getVideo(page: number, category: string, vimeoUser: string) {
     setLoading(true);
+
+    const userId = vimeoUser.split("/").at(-1);
 
     try {
       const fields = 'uri,name,pictures.sizes.link';
@@ -47,7 +52,7 @@ export default function VideoSequence() {
       if (category !== '') {
         params.category = category;
       }
-      const res = await axios.get(`https://api.vimeo.com/users/user89245014/videos`, {
+      const res = await axios.get(`https://api.vimeo.com/users/${userId}/videos`, {
         headers: {
           Authorization: `Bearer ${process.env.VIMEO_ACCESS_TOKEN ?? '3b6d54e788d3347f69d8ebedcdd2f99f'}`,
         },
@@ -71,7 +76,7 @@ export default function VideoSequence() {
   async function handleClickExpand() {
     if (currentPage * 16 < total) {
       setCurrentPage(currentPage + 1);
-      await getVideo(currentPage + 1, categoryValue);
+      await getVideo(currentPage + 1, categoryValue, vimeoUserRef.current);
     }
   }
 
@@ -104,11 +109,18 @@ export default function VideoSequence() {
     setVideo([]);
     setTotal(0);
     setCurrentPage(1);
-    await getVideo(1, value);
+    await getVideo(1, value, vimeoUserRef.current);
   }
 
   useEffect(() => {
-    getVideo(currentPage, categoryValue).then();
+    client
+      .get('/api/client/vimeo')
+      .then((res) => {
+        vimeoUserRef.current = res.data.vimeo;
+      })
+      .then(() => {
+        return getVideo(currentPage, categoryValue, vimeoUserRef.current);
+      });
   }, []);
 
   useEffect(() => {
@@ -131,10 +143,6 @@ export default function VideoSequence() {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
-
-  useEffect(() => {
-    console.log(selectedVideo);
-  }, [selectedVideo]);
 
   return (
     <div className='pt-4' style={{backgroundColor, minHeight: 400}}>
