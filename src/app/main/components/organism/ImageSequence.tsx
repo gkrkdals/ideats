@@ -24,11 +24,16 @@ export default function ImageSequence() {
       })
   }, []);
 
-  return images.map((image, i) => {
-    if (image.src.split(".").at(-1) === "txt") {
-      return isMobile ? <VideoSlider key={i} /> : <VideoSequence key={i} />;
-    } else {
-      return <ImageContainer key={i} src={image.src} alt={image.alt} />
-    }
-  });
+  return (
+    <>
+      <div style={{ height: isMobile ? 130 : 70 }} />
+      {images.map((image, i) => {
+        if (image.src.split(".").at(-1) === "txt") {
+          return isMobile ? <VideoSlider key={i} /> : <VideoSequence key={i} />;
+        } else {
+          return <ImageContainer key={i} src={image.src} alt={image.alt} />
+        }
+      })}
+    </>
+  )
 }

@@ -164,3 +164,7 @@
         font-size: 8pt;
     }
 }
+
+html, body {
+    overflow-x: hidden;
+}

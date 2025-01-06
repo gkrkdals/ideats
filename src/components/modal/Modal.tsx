@@ -6,7 +6,7 @@ export interface ModalProps {
   open: boolean;
   setOpen: (open: boolean) => void;
   children?: React.ReactNode;
-  width?: number;
+  width?: number | string;
 }
 
 export default function Modal(props: ModalProps) {
@@ -21,7 +21,7 @@ export default function Modal(props: ModalProps) {
           onClick={e => e.stopPropagation()}
           style={{
             width: props.width,
-            maxHeight: '95vh',
+            maxHeight: '90vh',
             overflow: 'auto',
           }}
         >

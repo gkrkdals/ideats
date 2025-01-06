@@ -21,6 +21,7 @@ const Wrapper = ({children}: { children?: ReactNode }) => <div className='mb-3'>
 
 export default function ContactModal(props: ContactModalProps) {
   const textAreaRef = useRef<HTMLTextAreaElement | null>(null);
+  const isMobile = useIsMobile();
 
   const [emailData, setEmailData] = useState<EmailDto>({
     projectName: '',
@@ -48,7 +49,7 @@ export default function ContactModal(props: ContactModalProps) {
   });
 
   return (
-    <Modal open={props.open} setOpen={props.setOpen} width={600}>
+    <Modal open={props.open} setOpen={props.setOpen} width={isMobile ? '90vw' : 600}>
       <ModalTitle>
         P R O D U C T I O N
       </ModalTitle>
