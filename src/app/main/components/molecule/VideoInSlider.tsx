@@ -9,19 +9,20 @@ interface VideoInSliderProps {
 export default function VideoInSlider({ video }: VideoInSliderProps) {
 
   async function handleShare() {
-    if (typeof navigator !== "undefined" && navigator.share !== undefined) {
-      try {
-        await navigator.share({
-          title: video.name,
-          text: video.name,
-          url: `https://vimeo.com/${video.uri.split("/").at(-1)}`
-        })
-      } catch (e) {
-        console.error("공유 실패");
-      }
-    } else {
-      alert('공유 기능을 지원하지 않는 브라우저입니다.')
-    }
+    window.open(`https://vimeo.com/${video.uri.split("/").at(-1)}`, '_blank');
+    // if (typeof navigator !== "undefined" && navigator.share !== undefined) {
+    //   try {
+    //     await navigator.share({
+    //       title: video.name,
+    //       text: video.name,
+    //       url: `https://vimeo.com/${video.uri.split("/").at(-1)}`
+    //     })
+    //   } catch (e) {
+    //     console.error("공유 실패");
+    //   }
+    // } else {
+    //   alert('공유 기능을 지원하지 않는 브라우저입니다.')
+    // }
   }
 
   return (
